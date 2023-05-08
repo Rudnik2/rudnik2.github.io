@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4f2b9fd7.css",
+    "main.js": "/static/js/main.e55adab3.js",
+    "static/js/787.9d0d5096.chunk.js": "/static/js/787.9d0d5096.chunk.js",
+    "static/media/formbuilder.png": "/static/media/formbuilder.ebdf7c2c6ee5fc95eddb.png",
+    "static/media/zdjecie.jpg": "/static/media/zdjecie.6e01f710142f62837652.jpg",
+    "static/media/css.png": "/static/media/css.19c8605d6b2861f5fbe0.png",
+    "static/media/Angular.png": "/static/media/Angular.b6d2a9dec3e43e0ffb95.png",
+    "static/media/html.png": "/static/media/html.c4d9c8dcdf4078875355.png",
+    "static/media/CV - Piotr Łaguna.pdf": "/static/media/CV - Piotr Łaguna.a829fb97a3ed910d20b3.pdf",
+    "static/media/todoImage.png": "/static/media/todoImage.72dfc5dbf7f3c7a63bd7.png",
+    "static/media/spring.png": "/static/media/spring.6b6bc2db47657d35da34.png",
+    "static/media/typescript.png": "/static/media/typescript.52ea0bc40ba11d507e7d.png",
+    "static/media/nodejs.png": "/static/media/nodejs.bc4b43cd5f20ba305059.png",
+    "static/media/docker.png": "/static/media/docker.c1f953a3ead577c05d04.png",
+    "static/media/github.svg": "/static/media/github.e7e2bc8e3b94958f09a23ee8a5aaae7a.svg",
+    "static/media/home.svg": "/static/media/home.fea206111e1b2ca025cd3e20247842ee.svg",
+    "index.html": "/index.html",
+    "static/media/linkedin.svg": "/static/media/linkedin.55fb388c4c9df6986ca32fe64a60414a.svg",
+    "static/media/mail.svg": "/static/media/mail.a1bc08436eb7223da147076ee7a94840.svg",
+    "main.4f2b9fd7.css.map": "/static/css/main.4f2b9fd7.css.map",
+    "main.e55adab3.js.map": "/static/js/main.e55adab3.js.map",
+    "787.9d0d5096.chunk.js.map": "/static/js/787.9d0d5096.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4f2b9fd7.css",
+    "static/js/main.e55adab3.js"
+  ]
+}
