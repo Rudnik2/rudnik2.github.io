@@ -1,0 +1,160 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  padding: 0.5rem 0;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 80px;
+}
+a {
+  text-decoration: none;
+  color: #ccd6f6;
+  border: none;
+}
+a:hover {
+  color: #64ffda;
+  cursor: pointer;
+}
+.navigation button {
+  position: relative;
+  text-decoration: none;
+  color: #ccd6f6;
+  border: none;
+  font-size: 16px;
+}
+.navigation button:not(.activeClass)::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background-color: #64ffda;
+  left: 0;
+  bottom: -5px;
+  transform: scale(0, 1);
+  transition: transform 0.2s ease;
+  transform-origin: 0 100%;
+}
+
+.navigation button:not(.activeClass):hover::before {
+  transform: scale(1, 1);
+}
+.navigation button.activeClass::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background-color: #64ffda;
+  left: 0;
+  bottom: -5px;
+  transition: transform 0.2s ease;
+  transform-origin: 0 100%;
+}
+.navigation button:hover {
+  color: #64ffda;
+  cursor: pointer;
+}
+
+.navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+li {
+  padding: 0 1rem;
+}
+
+.homeIcon {
+  width: 64px;
+  height: 64px;
+  padding-left: 1rem;
+}
+.homeIcon path {
+  transition: all 250ms ease-in;
+}
+.homeIcon:hover path {
+  cursor: pointer;
+  animation-name: hoverHome;
+  animation-duration: 0.25s;
+  animation-timing-function: ease-in;
+  stroke: #0a192f;
+  fill: #64ffda;
+}
+
+.toggleButton {
+  text-decoration: none;
+  color: #ccd6f6;
+  border: none;
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 35px;
+  height: 24px;
+}
+.toggleButton:hover {
+  /* background-color: #ccd6f6; */
+}
+.bar {
+  height: 3px;
+  width: 100%;
+  background-color: #ccd6f6;
+  border-radius: 10px;
+}
+
+/* ANIMATIONS AND MEDIA */
+@keyframes hoverHome {
+  0% {
+    stroke: #64ffda;
+    fill: #0a192f;
+  }
+  100% {
+    stroke: #0a192f;
+    fill: #64ffda;
+  }
+}
+@media screen and (max-width: 700px) {
+  .homeIcon {
+    display: block;
+    width: 64px;
+    height: 64px;
+  }
+  .header {
+    display: block;
+  }
+
+  li {
+    text-align: center;
+  }
+  li:hover {
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .toggleButton {
+    display: flex;
+  }
+  .navigation button:not(.activeClass)::before {
+    height: 0px;
+  }
+  .navigation button.activeClass::before {
+    height: 0px;
+  }
+  .navigation {
+    display: none;
+  }
+  .activated {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
